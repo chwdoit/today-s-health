@@ -55,6 +55,12 @@ public class TimerActivity extends AppCompatActivity {
         int minutes = parseTime(minuteStr);
         int seconds = parseTime(secondStr);
 
+        // 최대 시간을 24시간으로 제한
+        if (hours > 24 || (hours == 24 && (minutes > 0 || seconds > 0))) {
+            Toast.makeText(this, "최대 설정 시간은 24시간입니다.", Toast.LENGTH_SHORT).show();
+            return;
+        }
+
         // 시간을 밀리초로 변환
         timeLeftInMillis = (hours * 3600 + minutes * 60 + seconds) * 1000;
 
