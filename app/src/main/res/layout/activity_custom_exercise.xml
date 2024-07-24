@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/exerciseNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="운동 이름"
+        android:layout_alignParentTop="true" />
+
+    <EditText
+        android:id="@+id/weightEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="무게 (kg)"
+        android:inputType="numberDecimal"
+        android:layout_below="@id/exerciseNameEditText"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/setsEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="세트 수"
+        android:inputType="number"
+        android:layout_below="@id/weightEditText"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/repetitionsEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="반복 횟수"
+        android:inputType="number"
+        android:layout_below="@id/setsEditText"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/saveExerciseButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="저장"
+        android:layout_below="@id/repetitionsEditText"
+        android:layout_marginTop="16dp"/>
+</RelativeLayout>
