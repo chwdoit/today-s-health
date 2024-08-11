@@ -5,4 +5,22 @@
 
 ## ⏲️ 개발 기간
 2024.07.19(목) ~ 2023.07.24(토)
-1. 
+
+⚙️ 개발 환경
+
+- Java 11
+
+- Framework : Android SDK
+
+- Database : SQLite
+
+## 📌 주요 기능
+
+#### 로그인
+
+- DB값 검증
+
+- ID찾기, PW찾기
+
+- 로그인 시 쿠키(Cookie) 및 세션(Session) 생성
+
